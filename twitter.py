@@ -55,6 +55,7 @@ class TwitterClient(object):
 
         try:
             recd_tweets = self.api.search(q=self.query,
+                                          lang="en",
                                           count=self.tweet_count_max)
             if not recd_tweets:
                 pass
